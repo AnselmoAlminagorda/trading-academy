@@ -1,0 +1,85 @@
+body {
+  background-color: #0f111a;
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+a {
+  color: #4ea8de;
+  text-decoration: none;
+}
+
+.cursos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.curso-box {
+  background-color: #1c1e29;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 180px;
+}
+
+.curso-box h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.curso-box p {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  color: #c9d1d9;
+}
+
+.curso-accion {
+  margin-top: auto;
+}
+
+.ya-inscrito {
+  color: #00ff88;
+  font-weight: bold;
+  display: inline-block;
+}
+
+button {
+  background-color: #22c55e;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #16a34a;
+}
+
+/* RESPONSIVE MOBILE */
+@media (max-width: 700px) {
+  .cursos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .curso-box {
+    min-height: unset;
+  }
+}

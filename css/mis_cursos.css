@@ -1,0 +1,73 @@
+:root {
+    --color-principal: #1E2A38;   /* Azul oscuro */
+    --color-secundario: #4DB6AC;  /* Verde azulado suave */
+    --color-fondo: #F4F6F8;       /* Gris claro */
+    --color-blanco: #FFFFFF;
+    --color-texto: #ffffff;
+    --color-hover: #35797F;
+
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--color-principal);
+  margin: 0;
+  padding: 1rem;
+  color: var(--color-texto);
+}
+
+h1 {
+  color: var(--color-principal);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+a {
+  color: var(--color-secundario);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-hover);
+  text-decoration: underline;
+}
+
+/* Estilo de la lista de cursos */
+ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  background-color: var(--color-blanco);
+  border: 1px solid #ddd;
+  border-left: 5px solid var(--color-secundario);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s;
+}
+
+li:hover {
+  transform: scale(1.02);
+  border-left-color: var(--color-hover);
+}
+
+li h3 {
+  margin: 0 0 0.5rem;
+  color: var(--color-principal);
+}
+
+li p {
+  margin: 0 0 1rem;
+}
+
+li a {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}

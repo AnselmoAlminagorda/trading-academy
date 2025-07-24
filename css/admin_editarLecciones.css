@@ -1,0 +1,66 @@
+/* Estilo general del body */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #F4F6F8;
+    color: #333;
+    padding: 2rem;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    color: #1E2A38;
+    margin-bottom: 1.5rem;
+}
+
+/* Enlace de volver */
+p a {
+    text-decoration: none;
+    color: #4DB6AC;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+p a:hover {
+    color: #35797F;
+}
+
+/* Inputs y textarea */
+input[type="text"],
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+/* Espacio entre campos */
+label {
+    font-weight: 500;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+/* Botón centrado y estilizado */
+button {
+    display: block;
+    margin: 2rem auto 0;
+    background-color: #4DB6AC;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #35797F;
+}

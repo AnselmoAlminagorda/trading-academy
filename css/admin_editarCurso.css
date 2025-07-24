@@ -1,0 +1,79 @@
+:root {
+  --color-principal: #1E2A38;   /* Azul oscuro */
+  --color-secundario: #4DB6AC;  /* Verde azulado suave */
+  --color-fondo: #F4F6F8;       /* Gris claro */
+  --color-blanco: #FFFFFF;
+  --color-texto: #333333;
+  --color-hover: #35797F;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-fondo);
+  font-family: 'Segoe UI', sans-serif;
+  color: var(--color-texto);
+}
+
+h1 {
+  text-align: center;
+  background-color: var(--color-principal);
+  color: var(--color-blanco);
+  padding: 15px;
+  margin: 0 0 20px 0;
+  font-size: 22px;
+}
+
+.volver {
+  margin-left: 15px;
+  margin-bottom: 20px;
+}
+
+.volver a {
+  text-decoration: none;
+  color: var(--color-hover);
+  font-weight: bold;
+}
+
+form {
+  max-width: 95%;
+  margin: 0 auto;
+  background-color: var(--color-blanco);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+button {
+  width: 100%;
+  background-color: var(--color-secundario);
+  color: var(--color-blanco);
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--color-hover);
+}

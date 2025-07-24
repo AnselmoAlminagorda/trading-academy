@@ -1,0 +1,77 @@
+/* Estilo general */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #F4F6F8;
+    color: #333;
+    padding: 2rem;
+    max-width: 850px;
+    margin: auto;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    color: #1E2A38;
+    margin-bottom: 1.5rem;
+}
+
+/* Enlace de regreso */
+p a {
+    text-decoration: none;
+    color: #4DB6AC;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+p a:hover {
+    color: #35797F;
+}
+
+/* Contenido de la lección */
+p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* Botón */
+form button {
+    display: block;
+    margin: 2rem auto 1rem auto;
+    background-color: #4DB6AC;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #35797F;
+}
+
+/* Mensaje de éxito */
+p[style*="color:green"] {
+    background-color: #d7ffd9;
+    padding: 12px;
+    border: 1px solid #4caf50;
+    border-radius: 6px;
+    color: #256029;
+    font-weight: 500;
+    max-width: 500px;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+/* Archivo adjunto */
+p:last-of-type a {
+    color: #1E2A38;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+p:last-of-type a:hover {
+    color: #4DB6AC;
+}

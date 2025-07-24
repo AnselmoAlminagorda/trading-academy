@@ -1,0 +1,74 @@
+/* Estilo general */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #F4F6F8;
+    color: #333;
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    color: #1E2A38;
+    margin-bottom: 1.5rem;
+}
+
+/* Enlace volver */
+p a {
+    text-decoration: none;
+    color: #4DB6AC;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+p a:hover {
+    color: #35797F;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+th {
+    background-color: #1E2A38;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Acción */
+td a {
+    color: #d32f2f;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+/* Mensaje de éxito */
+p[style*="color:green"] {
+    background-color: #d7ffd9;
+    padding: 12px;
+    border: 1px solid #4caf50;
+    border-radius: 6px;
+    color: #256029;
+    font-weight: 500;
+    margin-bottom: 20px;
+}

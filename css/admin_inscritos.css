@@ -1,0 +1,71 @@
+:root {
+  --color-principal: #1E2A38;
+  --color-secundario: #4DB6AC;
+  --color-fondo: #F4F6F8;
+  --color-blanco: #FFFFFF;
+  --color-texto: #333333;
+  --color-hover: #35797F;
+}
+
+body {
+  background-color: var(--color-fondo);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--color-texto);
+}
+
+h1 {
+  text-align: center;
+  background-color: var(--color-principal);
+  color: var(--color-blanco);
+  padding: 15px;
+  margin: 0 0 20px 0;
+  font-size: 22px;
+}
+
+.volver {
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+.volver a {
+  text-decoration: none;
+  color: var(--color-hover);
+  font-weight: bold;
+}
+
+.mensaje {
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.tabla-contenedor {
+  overflow-x: auto;
+  padding: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--color-blanco);
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+th, td {
+  padding: 12px 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+}
+
+th {
+  background-color: var(--color-secundario);
+  color: var(--color-blanco);
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}

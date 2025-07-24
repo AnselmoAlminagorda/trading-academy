@@ -1,0 +1,5 @@
+{
+    "editor.multiCursorPaste": "full",
+    "editor.overtypeCursorStyle": "line",
+    "editor.cursorSmoothCaretAnimation": "on"
+}

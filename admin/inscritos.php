@@ -42,34 +42,37 @@ $usuarios = $stmt->fetchAll();
 <head>
     <meta charset="UTF-8">
     <title>Usuarios inscritos - <?= htmlspecialchars($curso['titulo']) ?></title>
+    <link rel="stylesheet" href="../css/admin_inscritos.css">
 </head>
 <body>
     <h1>Inscritos en: <?= htmlspecialchars($curso['titulo']) ?></h1>
-    <p><a href="cursos.php">← Volver a cursos</a></p>
+    <p class="volver"><a href="cursos.php">← Volver a cursos</a></p>
 
     <?php if (empty($usuarios)): ?>
-        <p>No hay usuarios inscritos aún.</p>
+        <p class="mensaje">No hay usuarios inscritos aún.</p>
     <?php else: ?>
-        <table border="1" cellpadding="6">
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Nombre</th>
-                    <th>Correo</th>
-                    <th>Fecha de inscripción</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php foreach ($usuarios as $u): ?>
+        <div class="tabla-contenedor">
+            <table>
+                <thead>
                     <tr>
-                        <td><?= $u['id'] ?></td>
-                        <td><?= htmlspecialchars($u['nombre']) ?></td>
-                        <td><?= htmlspecialchars($u['correo']) ?></td>
-                        <td><?= $u['fecha_inscripcion'] ?></td>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Correo</th>
+                        <th>Fecha de inscripción</th>
                     </tr>
-                <?php endforeach; ?>
-            </tbody>
-        </table>
+                </thead>
+                <tbody>
+                    <?php foreach ($usuarios as $u): ?>
+                        <tr>
+                            <td><?= $u['id'] ?></td>
+                            <td><?= htmlspecialchars($u['nombre']) ?></td>
+                            <td><?= htmlspecialchars($u['correo']) ?></td>
+                            <td><?= $u['fecha_inscripcion'] ?></td>
+                        </tr>
+                    <?php endforeach; ?>
+                </tbody>
+            </table>
+        </div>
     <?php endif; ?>
 </body>
 </html>

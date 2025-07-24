@@ -32,6 +32,7 @@ $usuarios = $stmt->fetchAll();
 <head>
     <meta charset="UTF-8">
     <title>Gestionar Usuarios</title>
+    <link rel="stylesheet" href="../css/admin_usuarios.css">
 </head>
 <body>
     <h1>Gestión de Usuarios</h1>

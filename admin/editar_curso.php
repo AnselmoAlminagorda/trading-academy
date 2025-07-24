@@ -44,10 +44,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <head>
     <meta charset="UTF-8">
     <title>Editar Curso</title>
+    <link rel="stylesheet" href="../css/admin_editarCurso.css">
 </head>
 <body>
     <h1>Editar Curso</h1>
-    <p><a href="cursos.php">← Volver a la lista</a></p>
+    <p class="volver"><a href="cursos.php">← Volver a la lista</a></p>
 
     <form method="post">
         <label>Título:</label><br>

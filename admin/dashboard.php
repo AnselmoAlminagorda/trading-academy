@@ -13,6 +13,7 @@ if (!esAdmin()) {
 <head>
     <meta charset="UTF-8">
     <title>Panel del Administrador</title>
+    <link rel="stylesheet" href="../css/admin_panel.css">
 </head>
 <body>
     <h1>Bienvenido al Panel de Administración</h1>

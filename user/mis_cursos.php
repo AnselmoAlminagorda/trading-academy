@@ -35,6 +35,7 @@ $cursos = $stmt->fetchAll();
 <head>
     <meta charset="UTF-8">
     <title>Mis Cursos</title>
+    <link rel="stylesheet" href="../css/mis_cursos.css">
 </head>
 <body>
     <h1>Mis Cursos</h1>

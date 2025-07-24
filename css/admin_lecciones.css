@@ -1,0 +1,106 @@
+:root {
+  --color-principal: #1E2A38;
+  --color-secundario: #4DB6AC;
+  --color-fondo: #F4F6F8;
+  --color-blanco: #FFFFFF;
+  --color-texto: #333333;
+  --color-hover: #35797F;
+}
+
+body {
+  background-color: var(--color-fondo);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--color-texto);
+}
+
+h1 {
+  text-align: center;
+  background-color: var(--color-principal);
+  color: var(--color-blanco);
+  padding: 15px;
+  margin: 0 0 20px 0;
+  font-size: 22px;
+}
+
+.volver {
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+.volver a {
+  text-decoration: none;
+  color: var(--color-hover);
+  font-weight: bold;
+}
+
+.mensaje {
+  text-align: center;
+  font-size: 16px;
+  color: green;
+  padding: 10px;
+}
+
+.formulario {
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  background: var(--color-blanco);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+form input[type="text"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+form button {
+  background-color: var(--color-secundario);
+  color: var(--color-blanco);
+  border: none;
+  padding: 10px 18px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: var(--color-hover);
+}
+
+.lecciones {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.lecciones ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.lecciones li {
+  background: var(--color-blanco);
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+}
+
+.lecciones a.enlace {
+  color: var(--color-secundario);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.lecciones a.enlace:hover {
+  color: var(--color-hover);
+}

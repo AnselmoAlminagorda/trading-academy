@@ -1,0 +1,144 @@
+:root {
+  --color-principal: #1E2A38;
+  --color-secundario: #4DB6AC;
+  --color-fondo: #F4F6F8;
+  --color-blanco: #FFFFFF;
+  --color-texto: #333333;
+  --color-hover: #35797F;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--color-fondo);
+  margin: 0;
+  padding: 1.5rem;
+  color: var(--color-texto);
+}
+
+
+h1, h2 {
+  color: var(--color-principal);
+  text-align: left;
+  margin-bottom: 1rem;
+}
+/* Enlace de volver */
+.volver a {
+    text-decoration: none;
+    color: #4DB6AC;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.volver a:hover {
+    color: #35797F;
+}
+
+
+/* Formulario agregar curso */
+.form-curso {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: var(--color-blanco);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.form-curso input,
+.form-curso textarea,
+.form-curso select {
+  width: 100%;
+  max-width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.form-curso textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-curso button {
+  background-color: var(--color-secundario);
+  color: var(--color-blanco);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-curso button:hover {
+  background-color: var(--color-hover);
+}
+
+/* Tabla de cursos */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--color-blanco);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+th {
+  background-color: var(--color-principal);
+  color: var(--color-blanco);
+  padding: 0.8rem;
+  text-align: left;
+}
+
+td {
+  padding: 0.8rem;
+  border-bottom: 1px solid #ddd;
+}
+
+td a {
+  color: var(--color-secundario);
+  text-decoration: none;
+  margin-right: 0.5rem;
+}
+
+td a:hover {
+  color: var(--color-hover);
+}
+
+/* Responsive tabla en móvil */
+@media (max-width: 768px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tr {
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: var(--color-blanco);
+    padding: 1rem;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  }
+
+  td {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: none;
+  }
+
+  td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: var(--color-principal);
+  }
+}

@@ -36,22 +36,23 @@ $cursos = $pdo->query("SELECT * FROM cursos ORDER BY nivel")->fetchAll();
 <head>
     <meta charset="UTF-8">
     <title>Administrar Cursos</title>
+    <link rel="stylesheet" href="../css/admin_curso.css">
 </head>
 <body>
     <h1>Gestión de Cursos</h1>
-    <p><a href="dashboard.php">← Volver al panel</a></p>
+    <p class="volver"><a href="dashboard.php">← Volver al panel</a></p>
 
     <?php if (isset($mensaje)) echo "<p style='color:green;'>$mensaje</p>"; ?>
 
     <h2>Agregar Curso</h2>
-    <form method="post">
-        <input type="text" name="titulo" placeholder="Título del curso" required><br>
-        <textarea name="descripcion" placeholder="Descripción del curso" required></textarea><br>
+    <form method="post" class="form-curso">
+        <input type="text" name="titulo" placeholder="Título del curso" required>
+        <textarea name="descripcion" placeholder="Descripción del curso" required></textarea>
         <select name="nivel" required>
             <option value="básico">Básico</option>
             <option value="intermedio">Intermedio</option>
             <option value="avanzado">Avanzado</option>
-        </select><br>
+        </select>
         <button type="submit">Agregar curso</button>
     </form>
 
@@ -77,6 +78,7 @@ $cursos = $pdo->query("SELECT * FROM cursos ORDER BY nivel")->fetchAll();
                     <a href="editar_curso.php?id=<?= $curso['id'] ?>">Editar</a> |
                     <a href="?eliminar=<?= $curso['id'] ?>" onclick="return confirm('¿Eliminar este curso?');">Eliminar</a> |
                     <a href="inscritos.php?curso=<?= $curso['id'] ?>">Ver inscritos</a>
+                    <a href="lecciones.php?curso=<?= $curso['id'] ?>">Gestionar lecciones</a>
                 </td>
             </tr>
         <?php endforeach; ?>

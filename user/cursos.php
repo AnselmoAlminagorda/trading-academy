@@ -40,29 +40,36 @@ $inscritos = $stmt->fetchAll(PDO::FETCH_COLUMN);
 <head>
     <meta charset="UTF-8">
     <title>Cursos Disponibles</title>
+    <link rel="stylesheet" href="../css/cursos_user.css">
+    <script src="../js/cursos_user.js"></script>
 </head>
 <body>
-    <h1>Cursos Disponibles</h1>
-    <p><a href="dashboard.php">← Volver al panel</a></p>
+    <div class="container">
+        <h1>Cursos Disponibles</h1>
+        <p><a href="dashboard.php">← Volver al panel</a></p>
 
-    <?php if (isset($mensaje)) echo "<p style='color:green;'>$mensaje</p>"; ?>
+        <?php if (isset($mensaje)) echo "<p style='color:green;'>$mensaje</p>"; ?>
 
-    <ul>
-    <?php foreach ($cursos as $curso): ?>
-        <li>
-            <h3><?= htmlspecialchars($curso['titulo']) ?> (<?= $curso['nivel'] ?>)</h3>
-            <p><?= nl2br(htmlspecialchars($curso['descripcion'])) ?></p>
+        <ul class="cursos-grid">
+            <?php foreach ($cursos as $curso): ?>
+                <li class="curso-box">
+                    <h3><?= htmlspecialchars($curso['titulo']) ?> (<?= $curso['nivel'] ?>)</h3>
+                    <p><?= nl2br(htmlspecialchars($curso['descripcion'])) ?></p>
 
-            <?php if (in_array($curso['id'], $inscritos)): ?>
-                <strong>✅ Ya inscrito</strong>
-            <?php else: ?>
-                <form method="post" style="margin-top:5px;">
-                    <input type="hidden" name="curso_id" value="<?= $curso['id'] ?>">
-                    <button type="submit">Inscribirme</button>
-                </form>
-            <?php endif; ?>
-        </li>
-    <?php endforeach; ?>
-    </ul>
+                    <div class="curso-accion">
+                        <?php if (in_array($curso['id'], $inscritos)): ?>
+                            <strong class="ya-inscrito">✅ Ya inscrito</strong>
+                        <?php else: ?>
+                            <form method="post">
+                                <input type="hidden" name="curso_id" value="<?= $curso['id'] ?>">
+                                <button type="submit">Inscribirme</button>
+                            </form>
+                        <?php endif; ?>
+                    </div>
+                </li>
+            <?php endforeach; ?>
+        </ul>
+    </div>
 </body>
 </html>
+

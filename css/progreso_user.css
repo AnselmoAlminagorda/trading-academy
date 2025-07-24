@@ -1,0 +1,89 @@
+:root {
+  --color-principal: #1E2A38;
+  --color-secundario: #4DB6AC;
+  --color-fondo: #F4F6F8;
+  --color-blanco: #FFFFFF;
+  --color-texto: #333333;
+  --color-hover: #35797F;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--color-fondo);
+  margin: 0;
+  padding: 1.5rem;
+  color: var(--color-texto);
+}
+
+h1 {
+  color: var(--color-principal);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+a {
+  color: var(--color-secundario);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-hover);
+  text-decoration: underline;
+}
+
+/* Lecciones en formato grid responsivo */
+ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  padding: 0;
+  list-style: none;
+  margin-top: 2rem;
+}
+
+li {
+  background-color: var(--color-blanco);
+  border-left: 5px solid var(--color-secundario);
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+
+li:hover {
+  transform: scale(1.01);
+  border-left-color: var(--color-hover);
+}
+
+li strong {
+  color: var(--color-principal);
+  font-size: 1.1rem;
+}
+
+li a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+p {
+  margin-top: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--color-principal);
+}
+.volver {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.volver a {
+  color: var(--color-secundario);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.volver a:hover {
+  color: var(--color-hover);
+  text-decoration: underline;
+}
