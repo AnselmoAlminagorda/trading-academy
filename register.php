@@ -24,10 +24,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 ?>
 
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es">SS
 <head>
     <meta charset="UTF-8">
     <title>Registrarse</title>
+    <link rel="stylesheet" href="css/register.css">
 </head>
 <body>
     <h2>Registro de Usuario</h2>

@@ -51,7 +51,7 @@ $completadas = $stmt->fetchAll(PDO::FETCH_COLUMN);
 </head>
 <body>
     <h1>Progreso en: <?= htmlspecialchars($curso['titulo']) ?></h1>
-    <p class="volver"><a href="mis_cursos.php">← Volver a mis cursos</a></p>
+    <p class="volver"><a class="volver" href="mis_cursos.php">← Volver a mis cursos</a></p>
 
     <ul>
     <?php foreach ($lecciones as $leccion): ?>
