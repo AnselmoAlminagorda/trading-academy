@@ -1,6 +1,6 @@
 <?php
 try {
-    $conn = new PDO("sqlsrv:server=tcp:sqlserver-portafolio.database.windows.net,1433;Database=db_portafolio", "Anselmo", "TU_CONTRASEÑA_AQUÍ");
+    $conn = new PDO("sqlsrv:server=tcp:sqlserver-portafolio.database.windows.net,1433;Database=db_portafolio", "Anselmo", "@71almercO");
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     echo "Conexión exitosa con PDO.";
 } catch (PDOException $e) {
