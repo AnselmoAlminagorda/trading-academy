@@ -33,16 +33,21 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Iniciar Sesión</title>
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/loginn.css">
     <script src="js/animaciones.js"></script>
 </head>
 <body>
+    <video autoplay muted loop id="video-bg">
+        <source src="videos/fondo.mp4" type="video/mp4">
+    </video>
     <div class="login-container">
+        <h1 class="bienvenido">Bienvenido a</h1>
+        <h1 class="plataforma">ANSELMOTRADE-ACADEMI</h1>
     <h2>Iniciar Sesión</h2>
     <?php if (isset($error)) echo "<p style='color:red;'>$error</p>"; ?>
     <form method="post">
-        <input type="email" name="correo" placeholder="Correo electronico" required><br>
-        <input type="password" name="contraseña" placeholder="Contraseña" required><br>
+        <input type="email" name="correo" placeholder="Correo electronico" required>
+        <input type="password" name="contraseña" placeholder="Contraseña" required>
         <button type="submit">Ingresar</button>
     </form>
     </div>

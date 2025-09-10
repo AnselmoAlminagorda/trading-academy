@@ -28,6 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <head>
     <meta charset="UTF-8">
     <title>Registrarse</title>
+    <link rel="stylesheet" href="css/registro.css">
 </head>
 <body>
     <h2>Registro de Usuario</h2>
